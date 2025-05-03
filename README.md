@@ -20,6 +20,7 @@ UPDATE
 ======
 <pre>
 cd /usr/src/TBS_DTV_DKMS
+git fetch
 git submodule update --recursive --remote
 sudo dkms remove TBS_DTV_DKMS/github.com_tbsdtv -k $(uname -r)
 sudo dkms install -m TBS_DTV_DKMS -v github.com_tbsdtv
