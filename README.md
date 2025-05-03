@@ -9,18 +9,18 @@ INSTALL
 =======
 <pre>
 cd /usr/src
-git clone https://github.com/hoeze/TBS_DTV_DKMS.git
-ln -s TBS_DTV_DKMS TBS_DTV_DKMS-github.com_tbsdtv
-cd TBS_DTV_DKMS
+git clone https://github.com/thecosmicslug/TBSDVB_DKMS.git
+ln -s TBSDVB_DKMS TBSDVB_DKMS-github.com_tbsdtv
+cd TBSDVB_DKMS
 git submodule update --init --recursive --depth=1
-sudo dkms install -m TBS_DTV_DKMS -v github.com_tbsdtv
+sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 </pre>
 
 UPDATE
 ======
 <pre>
-cd /usr/src/TBS_DTV_DKMS
+cd /usr/src/TBSDVB_DKMS
 git submodule update --recursive --remote
-sudo dkms remove TBS_DTV_DKMS/github.com_tbsdtv -k $(uname -r)
-sudo dkms install -m TBS_DTV_DKMS -v github.com_tbsdtv
+sudo dkms remove TBSDVB_DKMS/github.com_tbsdtv -k $(uname -r)
+sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 </pre>
