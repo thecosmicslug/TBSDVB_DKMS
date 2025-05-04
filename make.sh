@@ -7,6 +7,7 @@ make rmmod
 make dir DIR=../media KERNELRELEASE=$kernelver
 make distclean
 make allyesconfig KERNELRELEASE=$kernelver
-sed -i -r 's/(^CONFIG.*_RC.*=)./\1n/g' v4l/.config
-sed -i -r 's/(^CONFIG.*_IR.*=)./\1n/g' v4l/.config
+cp modv4l.config v4l/.config
+#sed -i -r 's/(^CONFIG.*_RC.*=)./\1n/g' v4l/.config
+#sed -i -r 's/(^CONFIG.*_IR.*=)./\1n/g' v4l/.config
 make -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null) KERNELRELEASE=$kernelver

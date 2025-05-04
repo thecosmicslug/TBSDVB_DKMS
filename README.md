@@ -30,3 +30,12 @@ git submodule update --recursive --remote
 sudo dkms remove TBSDVB_DKMS/github.com_tbsdtv -k $(uname -r)
 sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 </pre>
+
+CREDITS
+=======
+This was originally from: 
+<pre>https://github.com/marcusbirkin/TBS_DTV_DKMS</pre>
+
+This resource was also very helpful:
+<pre>https://electro-dan.co.uk/blog/16/tv-in-linux-using-the-geniatech-mygica-usb-tv-tuner-stick-t230a
+</pre>
