@@ -23,7 +23,7 @@ sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 UPDATE
 ======
 <pre>
-cd /usr/src/TBS_DTV_DKMS
+cd /usr/src/TBSDVB_DKMS
 git fetch
 git submodule update --recursive --remote
 
