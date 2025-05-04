@@ -1,4 +1,4 @@
-TBSDVB_DKMS - DKMS support for Building the TBS6285 kernel modules.
+DKMS support for Building the TBS6285 kernel modules.
 ========
 
 INTRO
