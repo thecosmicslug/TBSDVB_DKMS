@@ -11,6 +11,8 @@ Next I had been using a build script to recompile the TBS modules after each upg
 
 When running a media server providing DVB streaming and related services, interruptions and repeated reboots like this cause an inconvenience to users (and families!)
 
+The Fix
+=======
 This is my next solution, building upon the script this DKMS module will make recompiling these modules after kernel update much easier, 
 
 Now the modules are built each time a new kernel is installed and I can simply reboot the computer into the new kernel with new TBS modules at a convenient time. (Not interrupting DVB recordings or user streaming!)
