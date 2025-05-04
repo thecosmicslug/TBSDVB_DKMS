@@ -1,8 +1,15 @@
 TBS_DTV_DKMS
 ============
 
-Very basic DKMS script for TBS DTV drivers from https://github.com/tbsdtv
-DKMS will auto recompile these drivers on kernel updates
+This is a DKMS script for Building the TBS6285 (and many others) modules from https://github.com/tbsdtv.
+
+Previously I had been using a build script to recompile the TBS modules after each upgrade, it involved rebooting into a new kernel and running the build script. then reloading the modules and restarting services depending on them.
+
+When running a server providing DVB streaming and related services to clients, interuptions and repeated reboots like this cause an inconvenience to users!
+
+this solution will make recompiling these modules after kernel updates much easier, 
+
+Now the modules are built each time a new kernel is installed and I can simply reboot the computer into the new kernel with new TBS modules at a convenient time.
 
 INSTALL
 =======
@@ -34,7 +41,8 @@ CREDITS
 =======
 This was originally from: 
 <pre>https://github.com/marcusbirkin/TBS_DTV_DKMS</pre>
+but it did not build all the modules for me, so I have adapted it to build successfully on my TBS6285 card. 
+other cards may well need to adjust module entries in the `dkms.conf` file. 
 
-This resource was also very helpful:
-<pre>https://electro-dan.co.uk/blog/16/tv-in-linux-using-the-geniatech-mygica-usb-tv-tuner-stick-t230a
-</pre>
+This resource was also very helpful in learning about DKMS and the build system:
+<pre>https://electro-dan.co.uk/blog/16/tv-in-linux-using-the-geniatech-mygica-usb-tv-tuner-stick-t230a</pre>
