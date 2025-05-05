@@ -1,4 +1,4 @@
-DKMS support for Building the TBS6285 kernel modules.
+DKMS for building the TBS6285 kernel modules.
 ========
 
 INTRO
