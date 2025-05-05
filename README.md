@@ -5,9 +5,9 @@ INTRO
 =======
 TBS produce nice hardware, and the software IS open-source, but unfortunately the modules are not included in the Linux kernel for easy installation... but must be recompiled and installed after EVERY SINGLE kernel upgrade!!
 
-I Started following the instructions at [https://linuxtv.org/wiki/index.php/TBS_driver_installation](https://linuxtv.org/wiki/index.php/TBS_driver_installation) after every single bug-fix update my Home Media Server received and soon got fed up with that!
+I started following the instructions at [https://linuxtv.org/wiki/index.php/TBS_driver_installation](https://linuxtv.org/wiki/index.php/TBS_driver_installation) after every single bug-fix update my Home Media Server received and soon got fed up with that!
 
-Next I had been using a build script to recompile the TBS modules after each upgrade, it involved rebooting into a new kernel and running the build script. then reloading the DVB-related modules and restarting services like [TVHeadend](https://tvheadend.org/) depending on them. this was only slightly better.
+Next I had been using a build script to recompile the TBS modules after each upgrade. It involved rebooting into a new kernel and running the build script, then reloading the DVB-related modules and restarting services like [TVHeadend](https://tvheadend.org/) depending on them. This was only slightly better.
 
 When running a media server providing DVB streaming and related services, interruptions and repeated reboots like this cause an inconvenience to users (and families!)
 
