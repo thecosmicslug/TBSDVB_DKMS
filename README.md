@@ -30,7 +30,7 @@ cd /usr/src
 sudo git clone https://github.com/thecosmicslug/TBSDVB_DKMS.git
 sudo ln -s TBSDVB_DKMS TBSDVB_DKMS-github.com_tbsdtv
 </pre>
-Finally, enter `TBSDVB_DKMS` and install the DKMS module.
+Finally, enter `TBSDVB_DKMS` retrieve all sources and install the DKMS module.
 <pre>
 cd TBSDVB_DKMS
 sudo git submodule update --init --recursive --depth=1
