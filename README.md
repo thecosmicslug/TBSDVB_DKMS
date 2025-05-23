@@ -21,8 +21,8 @@ INSTALL
 =======
 First we must download the DVB firmware and place it in `/lib/firmware/`, this only has to be done once.
 <pre>
-wget -N http://www.tbsdtv.com/download/document/linux/tbs-tuner-firmwares_v1.0.tar.bz2
-sudo tar jxvf tbs-tuner-firmwares_v1.0.tar.bz2 -C /lib/firmware/
+wget -N https://github.com/tbsdtv/media_build/releases/download/last/dvb-firmwares.tar.bz2
+sudo tar jxvf dvb-firmwares.tar.bz2 -C /lib/firmware/
 </pre>
 Next clone this repo into `/usr/src`.
 <pre>
