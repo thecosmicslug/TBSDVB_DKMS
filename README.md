@@ -33,7 +33,6 @@ sudo ln -s TBSDVB_DKMS TBSDVB_DKMS-github.com_tbsdtv
 Finally, enter `TBSDVB_DKMS` retrieve all sources and install the DKMS module.
 <pre>
 cd TBSDVB_DKMS
-sudo git submodule update --init --recursive --depth=1
 sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 </pre>
 
@@ -43,7 +42,6 @@ To upgrade we first enter `/usr/src/TBSDVB_DKMS` and pull from GitHub.
 <pre>
 cd /usr/src/TBSDVB_DKMS
 sudo git fetch
-sudo git submodule update --recursive --remote
 </pre>
 Next we first remove the previous module, and install again. (using the updated sources)
 <pre>
