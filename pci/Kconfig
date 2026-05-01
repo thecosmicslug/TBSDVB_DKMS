@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+if PCI
+
+menuconfig MEDIA_PCI_SUPPORT
+	bool "Media PCI Adapters"
+	help
+	  Enable media drivers for PCI/PCIe bus.
+	  If you have such devices, say Y.
+
+if MEDIA_PCI_SUPPORT
+
+
+
+if MEDIA_DIGITAL_TV_SUPPORT
+	comment "Media digital TV PCI Adapters"
+
+source "pci/saa716x/Kconfig"
+source "pci/tbsecp3/Kconfig"
+source "pci/tbsmod/Kconfig"
+source "pci/tbsci/Kconfig"
+
+endif
+
+
+endif #MEDIA_PCI_SUPPORT
+endif #PCI
