@@ -1,8 +1,6 @@
 DKMS for building the TBS6285 kernel modules.
 ========
 
-INTRO
-=======
 TBS produce nice hardware, and the software IS open-source, but unfortunately the modules are not included in the Linux kernel for easy installation... but must be recompiled and installed after EVERY SINGLE kernel upgrade!!
 
 I started following the instructions at [https://linuxtv.org/wiki/index.php/TBS_driver_installation](https://linuxtv.org/wiki/index.php/TBS_driver_installation) after every single bug-fix update my Home Media Server received and soon got fed up with that!
@@ -14,13 +12,13 @@ This was only slightly better.
 When running a media server providing DVB streaming and related services, interruptions and repeated reboots like this cause an inconvenience to users (and families!)
 
 THE DKMS FIX
-=======
+======
 This is my next solution, building upon the script this DKMS module will make recompiling these modules after kernel update much easier, 
 
 Now the modules are built each time a new kernel is installed and I can simply reboot the computer into the new kernel with new TBS modules at a convenient time. (Not interrupting DVB recordings or user streaming!)
 
 KERNEL 6.17+
-=======
+======
 With kernel updates the repo at: https://github.com/tbsdtv/media_build stopped working, and it doesn't look to be fixed for new kernels anytime soon.
 
 People mentioned a new beta in testing from TBS (tbsdvb_v1013), so I decided to give it a go and was pleased to find it works.
@@ -29,7 +27,7 @@ Now this DKMS module is using the new TBS code which is much quicker to compile 
 
 
 INSTALL
-=======
+======
 First we install the dependancies:
 <pre>
 sudo apt-get install libproc-processtable-perl libelf-dev patchutils patch gcc make git wget
@@ -67,6 +65,9 @@ sudo dkms install -m TBSDVB_DKMS -v github.com_tbsdtv
 
 CREDITS
 =======
+
+The kernel module code was created by TBS, I simply package it into a DKMS module to save on maintenance.
+
 I didn't understand DKMS when I was looking at this problem and I found this originally from: 
 [github.com/marcusbirkin/TBS_DTV_DKMS](https://github.com/marcusbirkin/TBS_DTV_DKMS).
 
