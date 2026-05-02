@@ -30,12 +30,17 @@ Now this DKMS module is using the new TBS code which is much quicker to compile 
 
 INSTALL
 =======
-First we must download the DVB firmware and place it in `/lib/firmware/`, this only has to be done once.
+First we install the dependancies:
+<pre>
+sudo apt-get install libproc-processtable-perl libelf-dev patchutils patch gcc make git wget
+</pre>
+
+Next we must download the DVB firmware and place it in `/lib/firmware/`, this only has to be done once.
 <pre>
 wget -N https://github.com/thecosmicslug/TBSDVB_DKMS/raw/refs/heads/main/tbs-tuner-firmwares_v1.0.tar.bz2
 sudo tar jxvf tbs-tuner-firmwares_v1.0.tar.bz2 -C /lib/firmware/
 </pre>
-Next clone this repo into `/usr/src`.
+Then clone this repo into `/usr/src`.
 <pre>
 cd /usr/src
 sudo git clone https://github.com/thecosmicslug/TBSDVB_DKMS.git
