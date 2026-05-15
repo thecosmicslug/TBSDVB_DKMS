@@ -30,7 +30,7 @@ INSTALL
 ======
 First we install the dependancies:
 <pre>
-sudo apt-get install libproc-processtable-perl libelf-dev patchutils patch gcc make git wget
+sudo apt-get install dkms libproc-processtable-perl libelf-dev patchutils patch gcc make git wget
 </pre>
 
 Next we must download the DVB firmware and place it in `/lib/firmware/`, this only has to be done once.
